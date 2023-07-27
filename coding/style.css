@@ -1,0 +1,34 @@
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header >h1{
+    padding: 50px;
+    font-size: 10vw;
+}
+
+
+/* essa parte de section é responsavel pelo paralax */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section#img001{
+    background-image: url(/imagens/background001.jpg);
+    background-position: right center;    
+}
+
+section.imagem{
+    background-color: grey;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+}
