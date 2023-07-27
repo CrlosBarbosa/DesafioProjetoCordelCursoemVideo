@@ -11,6 +11,7 @@ header >h1{
 
 
 /* essa parte de section é responsavel pelo paralax */
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -29,6 +30,4 @@ section.imagem{
     color: white;
     background-size: cover;
     background-attachment: fixed;
-
-    
 }
