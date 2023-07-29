@@ -1,39 +1,97 @@
-/* responsavel por deixar o header mais completo, sem os espaços nele */
-* {
-    font-size: 1em;
+*{
+    padding: px;
     margin: 0px;
-    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Edu SA Beginner', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+html, body{
+    background-color: darkgray;
+    min-width: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
     background-color: black;
     color: white;
-    text-align: center;
+    font-family: var(--fonte2);
+  
 }
 
-header >h1{
-    padding: 50px;
+header > h1{
+    padding-top: 50px;
+    text-align: center;
+    font-variant: small-caps;
     font-size: 10vw;
 }
 
-/* essa parte de section é responsavel pelo paralax */
+header > p{
+    padding-bottom: 50px;
+    text-align: center;
+}
 
-section {
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: purple;
+    text-decoration: underline;
+}
+
+section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 3.5vw;
+    font-family: var(--fonte3);
 }
 
-section#img001{
-    background-image: url(/imagens/background001.jpg);
-    background-position: right center;    
+section.normal{
+    background-color: white;
+    color: black;
 }
 
 section.imagem{
-    background-color: grey;
-    color: white;
+    background-color: purple;
+    color: wheat;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.288);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 1px 0px black;
     background-size: cover;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
     background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
 }
